@@ -6,15 +6,14 @@ import java.sql.SQLException;
 
 public class ConexaoDB {
 
-    // URL de conexão para MySQL. Inclui parâmetros para evitar avisos comuns.
+    // URL correta para o banco de dados do nosso projeto
     private static final String URL = "jdbc:mysql://localhost:3306/supermercado?useSSL=false&serverTimezone=UTC";
-    private static final String USER = "root"; // Usuário padrão do MySQL é 'root'
-    private static final String PASSWORD = "admin"; // Altere para sua senha do MySQL
+    private static final String USER = "root";
+    private static final String PASSWORD = "admin"; // Lembre-se de usar sua senha correta aqui
 
     public static Connection getConnection() {
         Connection conn = null;
         try {
-            // Driver JDBC para MySQL
             Class.forName("com.mysql.cj.jdbc.Driver");
             conn = DriverManager.getConnection(URL, USER, PASSWORD);
         } catch (ClassNotFoundException | SQLException e) {

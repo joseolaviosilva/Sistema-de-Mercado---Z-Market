@@ -192,7 +192,8 @@ public class TelaCompraCliente extends JFrame {
                 textArea.setEditable(false);
                 JScrollPane scrollPane = new JScrollPane(textArea);
                 scrollPane.setPreferredSize(new Dimension(400, 300));
-                JOptionPane.showMessageDialog(this, "Compra Realizada com Sucesso!", JOptionPane.INFORMATION_MESSAGE);
+                // A linha abaixo estava com os parâmetros errados. Corrigido para a versão de 4 parâmetros.
+                JOptionPane.showMessageDialog(this, scrollPane, "Compra Realizada com Sucesso!", JOptionPane.INFORMATION_MESSAGE);
                 
                 atualizarTabelaProdutos();
                 atualizarTabelaCarrinho();

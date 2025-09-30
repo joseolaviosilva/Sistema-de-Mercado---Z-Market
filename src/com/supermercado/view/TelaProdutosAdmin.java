@@ -4,10 +4,10 @@ import com.supermercado.controller.LoginController;
 import com.supermercado.controller.ProdutoController;
 import com.supermercado.dao.ProdutoDAO;
 import com.supermercado.model.Produto;
-import javax.swing.*;
-import javax.swing.table.DefaultTableModel;
 import java.awt.*;
 import java.util.List;
+import javax.swing.*;
+import javax.swing.table.DefaultTableModel;
 
 public class TelaProdutosAdmin extends JFrame {
 

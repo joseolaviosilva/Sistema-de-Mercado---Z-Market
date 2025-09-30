@@ -4,8 +4,8 @@ import com.supermercado.controller.LoginController;
 import com.supermercado.controller.UsuarioController;
 import com.supermercado.dao.UsuarioDAO;
 import com.supermercado.model.Usuario;
-import javax.swing.*;
 import java.awt.*;
+import javax.swing.*;
 
 public class TelaLogin extends JFrame {
 

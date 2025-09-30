@@ -1,8 +1,8 @@
 package com.supermercado.view;
 
 import com.supermercado.controller.UsuarioController;
-import javax.swing.*;
 import java.awt.*;
+import javax.swing.*;
 
 public class TelaCadastroUsuario extends JDialog {
 
